@@ -1,5 +1,6 @@
 plugins {
     id("java")
+    id("com.github.ben-manes.versions") version "0.51.0" // Актуальная версия на май 2025
 }
 
 group = "hexlet.code"
