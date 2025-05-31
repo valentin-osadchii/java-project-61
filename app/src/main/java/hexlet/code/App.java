@@ -11,7 +11,6 @@ public class App {
         System.out.println("2 - Even");
         System.out.println("0 - Exit");
 
-        // тут надо проверить ввод пользователя на валидность и вернуть ошибку
         if (scanner.hasNextInt()) {
             int choice = scanner.nextInt();
             switch (choice) {

@@ -2,7 +2,13 @@ package hexlet.code;
 
 import java.util.Scanner;
 
-public class Greet {
+public final class Greet {
+
+    private Greet() {
+        throw new IllegalStateException("Utility class");
+    }
+
+
     public static String greet() {
         Scanner scanner = new Scanner(System.in);
 
@@ -16,7 +22,6 @@ public class Greet {
         } else {
             System.out.println("No input provided. Exiting.");
         }
-        //scanner.close();
         return userName;
     }
 
