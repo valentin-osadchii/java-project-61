@@ -4,5 +4,5 @@
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=valentin-osadchii_java-project-61&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=valentin-osadchii_java-project-61)
 
 # Asciinema demo
-[Even](https://asciinema.org/connect/3a429265-bdf8-4302-8656-d16516064479)
+[Even](https://asciinema.org/a/rEGLMlQqvx3iigy0LM3Qbb53v)
 
