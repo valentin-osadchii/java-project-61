@@ -5,4 +5,5 @@
 
 # Asciinema demo
 [Even](https://asciinema.org/a/rEGLMlQqvx3iigy0LM3Qbb53v)
+[Calculator](https://asciinema.org/a/nDNaubVLkSsWaSeoYrFEgqbmJ)
 
