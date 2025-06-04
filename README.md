@@ -11,3 +11,5 @@
 [Greatest common divisor](https://asciinema.org/a/Weh5L3JFWQcczl0dyEKBb5eYK)
 
 [Progression](https://asciinema.org/a/XdnJB0CIhhEZnmQhPrrtsbgmI)
+
+[Prime](https://asciinema.org/a/vV4JmYNqMhCb7Tim5WbTwgVqE)
