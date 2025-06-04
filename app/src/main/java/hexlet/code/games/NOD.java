@@ -19,7 +19,7 @@ public final class NOD {
 
             questionsAndAnswers[i][0] = a + " " + b;
 
-            if (a == b) {
+            if (a.equals(b)) {
                 questionsAndAnswers[i][1] = String.valueOf(a);
                 continue;
             }
