@@ -8,3 +8,5 @@
 
 [Calculator](https://asciinema.org/a/nDNaubVLkSsWaSeoYrFEgqbmJ)
 
+[Greatest common divisor](https://asciinema.org/a/Weh5L3JFWQcczl0dyEKBb5eYK)
+
