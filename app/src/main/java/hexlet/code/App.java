@@ -7,6 +7,7 @@ import hexlet.code.games.Even;
 import hexlet.code.games.NOD;
 import hexlet.code.games.Greet;
 import hexlet.code.games.Progression;
+import hexlet.code.games.PrimeNumber;
 
 public class App {
     public static void main(String[] args) {
@@ -18,6 +19,7 @@ public class App {
         System.out.println("3 - Calculator");
         System.out.println("4 - Greatest common divisor");
         System.out.println("5 - Progression");
+        System.out.println("6 - Prime");
         System.out.println("0 - Exit");
 
         if (scanner.hasNextInt()) {
@@ -39,6 +41,9 @@ public class App {
                     break;
                 case 5:
                     Progression.run();
+                    break;
+                case 6:
+                    PrimeNumber.run();
                     break;
                 default:
                     System.out.println("Goodbye");
