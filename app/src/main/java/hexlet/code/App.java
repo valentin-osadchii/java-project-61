@@ -4,8 +4,9 @@ import java.util.Scanner;
 
 import hexlet.code.games.Calculator;
 import hexlet.code.games.Even;
-import hexlet.code.games.Greet;
 import hexlet.code.games.NOD;
+import hexlet.code.games.Greet;
+import hexlet.code.games.Progression;
 
 public class App {
     public static void main(String[] args) {
@@ -16,6 +17,7 @@ public class App {
         System.out.println("2 - Even");
         System.out.println("3 - Calculator");
         System.out.println("4 - Greatest common divisor");
+        System.out.println("5 - Progression");
         System.out.println("0 - Exit");
 
         if (scanner.hasNextInt()) {
@@ -34,6 +36,9 @@ public class App {
                     break;
                 case 4:
                     NOD.run();
+                    break;
+                case 5:
+                    Progression.run();
                     break;
                 default:
                     System.out.println("Goodbye");

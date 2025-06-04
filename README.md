@@ -10,3 +10,4 @@
 
 [Greatest common divisor](https://asciinema.org/a/Weh5L3JFWQcczl0dyEKBb5eYK)
 
+[Progression](https://asciinema.org/a/XdnJB0CIhhEZnmQhPrrtsbgmI)
