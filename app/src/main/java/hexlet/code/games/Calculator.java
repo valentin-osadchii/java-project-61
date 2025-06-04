@@ -35,7 +35,7 @@ public final class Calculator {
                     System.out.println("Goodbye");
                     break;
             }
-            questionsAndAnswers[i][0] = number1 + operator + number2;
+            questionsAndAnswers[i][0] = number1 + " " + operator + " " + number2;
         }
 
         String instruction = "What is the result of the expression?";
