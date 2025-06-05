@@ -6,6 +6,10 @@ import hexlet.code.Engine;
 
 public final class Calculator {
 
+    private static final int MAX_NUMBER = 100;
+    private static final int OPERATION_RANDOMIZER = 3;
+
+
     private Calculator() {
         throw new IllegalStateException("Utility class");
     }
@@ -14,9 +18,9 @@ public final class Calculator {
         String[][] questionsAndAnswers = new String[Engine.ROUNDS_COUNT][2];
         Random random = new Random();
         for (int i = 0; i < Engine.ROUNDS_COUNT; i++) {
-            int number1 = random.nextInt(10);
-            int number2 = random.nextInt(10);
-            int operation = random.nextInt(3); // +0.5 Для равномерного распределения
+            int number1 = random.nextInt(MAX_NUMBER);
+            int number2 = random.nextInt(MAX_NUMBER);
+            int operation = random.nextInt(OPERATION_RANDOMIZER);
             String operator = "";
             switch (operation) {
                 case 0:

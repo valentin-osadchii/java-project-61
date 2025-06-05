@@ -12,7 +12,6 @@ import hexlet.code.games.PrimeNumber;
 public class App {
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter the game number and press Enter.");
         System.out.println("1 - Greet");
         System.out.println("2 - Even");
@@ -22,33 +21,34 @@ public class App {
         System.out.println("6 - Prime");
         System.out.println("0 - Exit");
 
-        if (scanner.hasNextInt()) {
-            System.out.print("Your choice: ");
-            int choice = scanner.nextInt();
-            scanner.nextLine(); // clear buffer to avoid /n
+        System.out.print("Your choice: ");
+        Scanner scanner = new Scanner(System.in);
+        if (scanner.hasNextLine()) {
+            String choice = scanner.nextLine();
+            //scanner.nextLine(); // clear buffer to avoid /n
             switch (choice) {
-                case 1:
+                case "1":
                     Greet.run();
                     break;
-                case 2:
+                case "2":
                     Even.run();
                     break;
-                case 3:
+                case "3":
                     Calculator.run();
                     break;
-                case 4:
+                case "4":
                     NOD.run();
                     break;
-                case 5:
+                case "5":
                     Progression.run();
                     break;
-                case 6:
+                case "6":
                     PrimeNumber.run();
                     break;
                 default:
-                    System.out.println("Goodbye");
+                    System.out.println("Unknown choice. Goodbye!");
                     break;
-                case 0:
+                case "0":
                     System.out.println("Goodbye");
             }
         } else {

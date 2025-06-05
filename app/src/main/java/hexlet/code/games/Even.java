@@ -5,6 +5,9 @@ import hexlet.code.Engine;
 
 
 public final class Even {
+    private static final int MAX_NUMBER = 10;
+
+
 
     private Even() {
         throw new IllegalStateException("Utility class");
@@ -14,7 +17,7 @@ public final class Even {
         String[][] questionsAndAnswers = new String[Engine.ROUNDS_COUNT][2];
         Random random = new Random();
         for (int i = 0; i < Engine.ROUNDS_COUNT; i++) {
-            int number = random.nextInt(100);
+            int number = random.nextInt(MAX_NUMBER);
             questionsAndAnswers[i][0] = String.valueOf(number);
             questionsAndAnswers[i][1] = (number % 2 == 0) ? "yes" : "no";
         }

@@ -6,6 +6,8 @@ import java.util.Random;
 
 public final class Progression {
     private static final int PROGRESSION_SIZE = 10;
+    private static final int MAX_START = 10;
+    private static final int MAX_STEP = 10;
 
     private Progression() {
         throw new IllegalStateException("Utility class");
@@ -20,8 +22,8 @@ public final class Progression {
         String[][] questionsAndAnswers = new String[Engine.ROUNDS_COUNT][2];
         Random random = new Random();
         for (int i = 0; i < Engine.ROUNDS_COUNT; i++) {
-            int start = random.nextInt(10);
-            int step = 1 + random.nextInt(10);
+            int start = random.nextInt(MAX_START);
+            int step = 1 + random.nextInt(MAX_STEP);
             int hidingIndex = random.nextInt(PROGRESSION_SIZE);
 
             String[] question = new String[PROGRESSION_SIZE];

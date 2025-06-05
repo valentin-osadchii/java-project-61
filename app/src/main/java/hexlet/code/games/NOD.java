@@ -6,6 +6,9 @@ import java.util.Random;
 
 public final class NOD {
 
+    private static final int MAX_NUMBER = 100;
+
+
     private NOD() {
         throw new IllegalStateException("Utility class");
     }
@@ -14,8 +17,8 @@ public final class NOD {
         String[][] questionsAndAnswers = new String[Engine.ROUNDS_COUNT][2];
         Random random = new Random();
         for (int i = 0; i < Engine.ROUNDS_COUNT; i++) {
-            Integer a = random.nextInt(100);
-            Integer b = random.nextInt(100);
+            Integer a = random.nextInt(MAX_NUMBER);
+            Integer b = random.nextInt(MAX_NUMBER);
 
             questionsAndAnswers[i][0] = a + " " + b;
 
