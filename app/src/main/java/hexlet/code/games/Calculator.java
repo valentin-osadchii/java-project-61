@@ -9,7 +9,7 @@ public final class Calculator {
     private static final int MAX_NUMBER = 100;
     private static final int MIN_NUMBER = 1;
     private static final int OPERATION_RANDOMIZER_MIN = 0;
-    private static final int OPERATION_RANDOMIZER_MAX = 3;
+    private static final int OPERATION_RANDOMIZER_MAX = 2;
 
 
     private Calculator() {
