@@ -3,6 +3,26 @@
 ### SonarQube status:
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=valentin-osadchii_java-project-61&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=valentin-osadchii_java-project-61)
 
+# Mind games
+Mind games is an app created as a part of Hexlet Java course learning path.
+It consists of five mathematical games. All interactions are within the terminal (no user interface provided).
+
+To run a game, execute the following commands:
+
+1. Build
+
+`make build`
+
+2. Install
+
+`make install`
+
+3. Run
+
+`make run-dist`
+
+Enjoy!
+
 # Asciinema demo
 [Even](https://asciinema.org/a/rEGLMlQqvx3iigy0LM3Qbb53v)
 
