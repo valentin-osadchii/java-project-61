@@ -1,12 +1,14 @@
 package hexlet.code.games;
 
 import hexlet.code.Engine;
-import java.util.Random;
+import hexlet.code.Utils;
+
 
 
 public final class NOD {
 
     private static final int MAX_NUMBER = 100;
+    private static final int MIN_NUMBER = 1;
 
 
     private NOD() {
@@ -15,10 +17,9 @@ public final class NOD {
 
     public static void run() {
         String[][] questionsAndAnswers = new String[Engine.ROUNDS_COUNT][2];
-        Random random = new Random();
         for (int i = 0; i < Engine.ROUNDS_COUNT; i++) {
-            Integer a = random.nextInt(MAX_NUMBER);
-            Integer b = random.nextInt(MAX_NUMBER);
+            Integer a = Utils.getRandomNumber(MIN_NUMBER, MAX_NUMBER);
+            Integer b = Utils.getRandomNumber(MIN_NUMBER, MAX_NUMBER);
 
             questionsAndAnswers[i][0] = a + " " + b;
 
