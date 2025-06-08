@@ -46,7 +46,7 @@ public class App {
                     PrimeNumber.run();
                     break;
                 default:
-                    System.out.println("Unknown choice. Goodbye!");
+                    System.out.println("Unknown choice: " + choice + ". Goodbye!");
                     break;
                 case "0":
                     System.out.println("Goodbye");
