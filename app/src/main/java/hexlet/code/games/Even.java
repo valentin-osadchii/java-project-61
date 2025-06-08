@@ -1,11 +1,12 @@
 package hexlet.code.games;
 
-import java.util.Random;
 import hexlet.code.Engine;
+import hexlet.code.Utils;
 
 
 public final class Even {
-    private static final int MAX_NUMBER = 10;
+    private static final int MAX_NUMBER = 100;
+    private static final int MIN_NUMBER = 1;
 
 
 
@@ -15,9 +16,8 @@ public final class Even {
 
     public static void run() {
         String[][] questionsAndAnswers = new String[Engine.ROUNDS_COUNT][2];
-        Random random = new Random();
         for (int i = 0; i < Engine.ROUNDS_COUNT; i++) {
-            int number = random.nextInt(MAX_NUMBER);
+            int number = Utils.getRandomNumber(MIN_NUMBER, MAX_NUMBER);
             questionsAndAnswers[i][0] = String.valueOf(number);
             questionsAndAnswers[i][1] = (number % 2 == 0) ? "yes" : "no";
         }
