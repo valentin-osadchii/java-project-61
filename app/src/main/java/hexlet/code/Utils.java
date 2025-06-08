@@ -6,6 +6,19 @@ public final class Utils {
         // Приватный конструктор — чтобы не создавать экземпляры
     }
 
+    public static String[] generateProgression(int start, int step, int size) {
+        if (size <= 0) {
+            throw new IllegalArgumentException("Progression must have at least 1 element, but you have asked for: "
+                    + size);
+        }
+        String[] progression = new String[size];
+
+        for (int j = 0; j < size; j++) {
+            progression[j] = String.valueOf(start + j * step);
+        }
+        return progression;
+    }
+
     public static int getRandomNumber(int min, int max) {
         if (min > max) {
             throw new IllegalArgumentException("Min must be <= max");
@@ -13,6 +26,12 @@ public final class Utils {
 
         // Формула: (int)(Math.random() * (max - min + 1)) + min
         return (int) (Math.random() * (max - min + 1)) + min;
+    }
+
+    public static int getRandomNumber(int max) {
+        int min = 0;
+        // Формула: (int)(Math.random() * (max - min + 1)) + min
+        return (int) (Math.random() * (max - min + 1));
     }
 
     public static int findGreatesCommonDivisor(int a, int b) {
