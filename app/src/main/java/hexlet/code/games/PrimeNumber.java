@@ -1,12 +1,12 @@
 package hexlet.code.games;
 
 import hexlet.code.Engine;
-
-import java.util.Random;
+import hexlet.code.Utils;
 
 
 public final class PrimeNumber {
     private static final int PRIME_MAX_SIZE = 100;
+    private static final int PRIME_MIN_SIZE = 1;
     private static final int NOT_EVEN_START = 3;
 
     private PrimeNumber() {
@@ -34,9 +34,8 @@ public final class PrimeNumber {
 
     public static void run() {
         String[][] questionsAndAnswers = new String[Engine.ROUNDS_COUNT][2];
-        Random random = new Random();
         for (int i = 0; i < Engine.ROUNDS_COUNT; i++) {
-            int number = random.nextInt(PRIME_MAX_SIZE);
+            int number = Utils.getRandomNumber(PRIME_MIN_SIZE, PRIME_MAX_SIZE);
 
             questionsAndAnswers[i][1] = isPrime(number) ? "yes" : "no";
             questionsAndAnswers[i][0] = String.valueOf(number);
