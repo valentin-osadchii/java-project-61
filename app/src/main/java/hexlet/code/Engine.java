@@ -28,9 +28,9 @@ public class Engine {
             return;
         }
 
-        for (int i = 0; i < ROUNDS_COUNT; i++) {
-            String question = questionsAndAnswers[i][0];
-            String correctAnswer = questionsAndAnswers[i][1];
+        for (String[] qa: questionsAndAnswers) {
+            String question = qa[0];
+            String correctAnswer = qa[1];
 
             System.out.println("Question: " + question);
             System.out.print("Your answer: ");
@@ -47,6 +47,8 @@ public class Engine {
             }
             System.out.println("Correct!");
         }
+
+
         System.out.println("Congratulations, " + userName + "!");
     }
 }
