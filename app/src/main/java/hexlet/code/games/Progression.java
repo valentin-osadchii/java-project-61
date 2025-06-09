@@ -3,9 +3,6 @@ package hexlet.code.games;
 import hexlet.code.Engine;
 import hexlet.code.Utils;
 
-import static hexlet.code.Utils.generateProgression;
-
-
 public final class Progression {
     private static final int PROGRESSION_SIZE = 10;
     private static final int MIN_START = 1;
@@ -33,7 +30,19 @@ public final class Progression {
         }
 
         String instruction = "What number is missing in the progression?";
-        Engine.runGame(questionsAndAnswers, instruction, "Progression");
+        Engine.runGame(questionsAndAnswers, instruction);
     }
 
+    public static String[] generateProgression(int start, int step, int size) {
+        if (size <= 0) {
+            throw new IllegalArgumentException("Progression must have at least 1 element, but you have asked for: "
+                    + size);
+        }
+        String[] progression = new String[size];
+
+        for (int j = 0; j < size; j++) {
+            progression[j] = String.valueOf(start + j * step);
+        }
+        return progression;
+    }
 }

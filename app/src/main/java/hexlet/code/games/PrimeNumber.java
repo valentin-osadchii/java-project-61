@@ -3,17 +3,16 @@ package hexlet.code.games;
 import hexlet.code.Engine;
 import hexlet.code.Utils;
 
-
 public final class PrimeNumber {
     private static final int PRIME_MAX_SIZE = 100;
     private static final int PRIME_MIN_SIZE = 1;
-    private static final int NOT_EVEN_START = 3;
-
     private PrimeNumber() {
         throw new IllegalStateException("Utility class");
     }
 
+
     static boolean isPrime(int n) {
+        int notEvenStart = 3;
         if (n < 2) {
             return false;
         }
@@ -24,7 +23,7 @@ public final class PrimeNumber {
             return false;
         }
 
-        for (int i = NOT_EVEN_START; i <= Math.sqrt(n); i += 2) {
+        for (int i = notEvenStart; i <= Math.sqrt(n); i += 2) {
             if (n % i == 0) {
                 return false;
             }
@@ -42,7 +41,6 @@ public final class PrimeNumber {
         }
 
         String instruction = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
-        Engine.runGame(questionsAndAnswers, instruction, "Prime");
+        Engine.runGame(questionsAndAnswers, instruction);
     }
-
 }

@@ -12,7 +12,7 @@ public final class Greet {
         String[][] questionsAndAnswers = new String[0][0];
         String instruction = "";
 
-        Engine.runGame(questionsAndAnswers, instruction, "Greet");
+        Engine.runGame(questionsAndAnswers, instruction);
     }
 
 
