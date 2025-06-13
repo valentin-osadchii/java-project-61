@@ -19,7 +19,7 @@ public final class NOD {
             int b = Utils.getRandomNumber(MIN_NUMBER, MAX_NUMBER);
 
             questionsAndAnswers[i][0] = a + " " + b;
-            questionsAndAnswers[i][1] = String.valueOf(findGreatesCommonDivisor(a, b));
+            questionsAndAnswers[i][1] = String.valueOf(gcd(a, b));
 
         }
 
@@ -27,7 +27,7 @@ public final class NOD {
         Engine.runGame(questionsAndAnswers, instruction);
     }
 
-    public static int findGreatesCommonDivisor(int a, int b) {
+    public static int gcd(int a, int b) {
         if (a == b) {
             return a;
         }
